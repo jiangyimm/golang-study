@@ -1,3 +1,18 @@
+/*
+常量快捷定义
+① 自动递增常量
+const (
+	Monday = iota + 1
+	Tuesday
+	Wednesday
+)
+② 按位自增常量
+const (
+	Readable = 1 << iota
+	Writable
+	Executable
+)
+*/
 package constant_test
 
 import (

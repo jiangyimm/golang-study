@@ -1,3 +1,11 @@
+/*
+斐波那锲数列
+① 变量声明及赋值
+var a int = 1
+a := 1
+② 多个变量同时赋值
+a, b = b, a
+*/
 package fib
 
 import (

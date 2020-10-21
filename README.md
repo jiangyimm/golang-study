@@ -1,7 +1,10 @@
 # golang-study
 golang code study records
 
-## hello world project
+#
+
+## ch1 
+### hello world project
 
 - 必须是main包
 - package main
@@ -29,4 +32,37 @@ func main() {
 	//退出状态
 	os.Exit(1)
 }
+```
+#
+
+## ch2
+### 单元测试
+- MUST 文件名：以xxx_test.go
+- MUST 方法名：func Testxxx(t *testing.T)
+### 斐波那锲数列
+- 变量声明及赋值
+```golang
+var a int = 1
+a := 1
+```
+- 多个变量同时赋值
+```golang
+a, b = b, a
+```
+### 常量快捷定义
+- 自动递增常量
+```golang
+const (
+	Monday = iota + 1
+	Tuesday
+	Wednesday
+)
+```
+- 按位自增常量
+```golang
+const (
+	Readable = 1 << iota
+	Writable
+	Executable
+)
 ```
