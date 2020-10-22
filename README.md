@@ -1,22 +1,17 @@
-
-
-
-
 # golang-study
 golang code study records
 
   * [ch1](#ch1)
     + [hello world project](#hello-world-project)
-  * [ch2 变量、常量](#ch2------)
-    + [单元测试](#----)
-    + [斐波那锲数列](#------)
-    + [常量快捷定义](#------)
-  * [ch3 数据类型](#ch3-----)
-    + [隐式类型](#----)
-    + [指针](#--)
-    + [字符串](#---)
+  * [ch2 变量、常量](#ch2-变量常量)
+    + [单元测试](#单元测试)
+    + [斐波那锲数列](#斐波那锲数列)
+    + [常量快捷定义](#常量快捷定义)
+  * [ch3 数据类型](#ch3-数据类型)
+    + [隐式类型](#隐式类型)
+    + [指针](#指针)
+    + [字符串](#字符串)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## ch1 
 ### hello world project
