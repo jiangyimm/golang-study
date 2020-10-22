@@ -35,7 +35,7 @@ func main() {
 ```
 #
 
-## ch2
+## ch2 变量、常量
 ### 单元测试
 - MUST 文件名：以xxx_test.go
 - MUST 方法名：func Testxxx(t *testing.T)
@@ -65,4 +65,45 @@ const (
 	Writable
 	Executable
 )
+```
+
+## ch3 数据类型
+### 隐式类型
+- 不支持任何隐式类型转换
+- 不支持别名的隐式类型转换
+```golang
+func TestImplicit(t *testing.T) {
+	var a int32 = 1
+	var b int64
+	b = int64(a)
+	var c MyInt
+	c = MyInt(b)
+	fmt.Println(a, b)
+	fmt.Println(c)
+}
+```
+### 指针
+- 支持指针
+- 不支持指针运算
+```golang
+func TestPoint(t *testing.T) {
+	a := 1
+	aPtr := &a
+	//aPtr = aPtr + 1
+	fmt.Println(a, aPtr)
+	fmt.Printf("%T %T", a, aPtr)
+}
+```
+### 字符串
+- 值类型
+- 初始值为空字符串而不是空
+```golang
+func TestString(t *testing.T) {
+	var s string
+	fmt.Println("*" + s + "*")
+	fmt.Println(len(s))
+	if s == "" {
+		fmt.Println(s)
+	}
+}
 ```
